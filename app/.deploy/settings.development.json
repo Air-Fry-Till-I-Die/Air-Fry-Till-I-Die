@@ -5,8 +5,8 @@
   ],
 
   "defaultInventory": [
-    { "name": "Apple", "image": "https://i5.walmartimages.ca/images/Enlarge/561/117/6000198561117.jpg", "owner": "john@foo.com", "servings": "2" },
-    { "name": "Flour", "image": "https://i5.walmartimages.com/asr/769b7ea6-1afd-4aad-9993-9a6ea57ef7b7_1.be2a4f66ed4a3c53b4eb76c3a99837dd.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff", "owner": "john@foo.com", "servings": "12" }
+    { "name": "Apple", "image": "https://i2.pickpik.com/photos/489/680/901/fruits-healthy-vitamins-eat-preview.jpg", "owner": "john@foo.com", "servings": "2" },
+    { "name": "Flour", "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/2020-05-05_14_04_18_A_bag_of_Gold_Medal_Premium_Quality_All_Purpose_Flour_at_the_Walmart_in_Chantilly%2C_Fairfax_County%2C_Virginia.jpg", "owner": "john@foo.com", "servings": "12" }
   ],
 
   "monti": {
