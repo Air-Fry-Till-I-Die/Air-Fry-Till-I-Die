@@ -1,0 +1,16 @@
+{
+  "defaultAccounts": [
+    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
+    { "email": "john@foo.com", "password": "changeme" }
+  ],
+
+  "defaultInventory": [
+    { "name": "Apple", "image": "https://i2.pickpik.com/photos/489/680/901/fruits-healthy-vitamins-eat-preview.jpg", "owner": "john@foo.com", "servings": "2" },
+    { "name": "Flour", "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/2020-05-05_14_04_18_A_bag_of_Gold_Medal_Premium_Quality_All_Purpose_Flour_at_the_Walmart_in_Chantilly%2C_Fairfax_County%2C_Virginia.jpg", "owner": "john@foo.com", "servings": "12" }
+  ],
+
+  "monti": {
+    "appId": "iFrJuKCzsswLKR87g",
+    "appSecret": "49a1200e-ee31-4009-beb6-9defd20864b2"
+  }
+}

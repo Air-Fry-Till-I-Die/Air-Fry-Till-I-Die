@@ -9,5 +9,10 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+  
+  "defaultInventory": [
+    { "name": "Apple", "image": "https://i5.walmartimages.ca/images/Enlarge/561/117/6000198561117.jpg", "owner": "john@foo.com", "servings": "2" },
+    { "name": "Flour", "image": "https://i5.walmartimages.com/asr/769b7ea6-1afd-4aad-9993-9a6ea57ef7b7_1.be2a4f66ed4a3c53b4eb76c3a99837dd.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff", "owner": "john@foo.com", "servings": "12" }
   ]
 }
