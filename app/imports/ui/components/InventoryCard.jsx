@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Card } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class InventoryCard extends React.Component {
@@ -12,6 +12,9 @@ class InventoryCard extends React.Component {
           <Image src={this.props.inventory.image}/>
           <Card.Header>{this.props.inventory.name}</Card.Header>
           <Card.Description>Servings: {this.props.inventory.servings}</Card.Description>
+        </Card.Content>
+        <Card.Content extra>
+          <Link to={'/nutrition/'}>Nutrition</Link>
         </Card.Content>
       </Card>
     );
