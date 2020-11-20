@@ -1,4 +1,9 @@
 .TopMenu {
-    font-size: 24;
+    font-size:24;
     padding-left:100px;
+}
+
+.ui.grid {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
 }
