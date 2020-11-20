@@ -15,13 +15,14 @@ class RecipeCollection {
       owner: String,
       servings: Number,
       description: String,
-      ingredients: {
+      ingredients: String,
+      /*  ingredients: {
         type: Array,
         minCount: 1,
         maxCount: 15,
-      },
+      },  */
       instructions: String,
-      public: Boolean,
+      publicAccess: Boolean,
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);
