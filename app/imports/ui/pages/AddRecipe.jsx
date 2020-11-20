@@ -5,12 +5,11 @@ import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
-import { Stuffs } from '../../api/stuff/Stuff';
+import { Recipes } from '../../api/recipe/Recipe';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   name: String,
-  owner: String,
   servings: Number,
   description: String,
   ingredients: String,
@@ -27,7 +26,7 @@ class AddRecipe extends React.Component {
   submit(data, formRef) {
     const { name, servings, description, ingredients, instructions, publicAccess } = data;
     const owner = Meteor.user().username;
-    Stuffs.collection.insert({ name, owner, servings, description, ingredients, instructions, publicAccess },
+    Recipes.collection.insert({ name, owner, servings, description, ingredients, instructions, publicAccess },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
