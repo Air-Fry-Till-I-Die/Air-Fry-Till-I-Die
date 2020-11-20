@@ -15,15 +15,14 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header inverted as='h1'>Air Fry Till I Die</Header>
           </Menu.Item>
-          <Menu.Item style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/">
-            <Header inverted as='h2'>Recipes</Header>
+          <Menu.Item style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/list">
+            <Header inverted as='h2'>All Recipes</Header>
           </Menu.Item>
           <Menu.Item style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/">
             <Header inverted as='h2'>Vendors</Header>
           </Menu.Item>
           {this.props.currentUser ? (
               [<Menu.Item position='right' as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Recipe</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>My Recipes</Menu.Item>,
               <Menu.Item as={NavLink} activeClassName="active" exact to="/inventory" key='inventory'>My Inventory</Menu.Item>,
               ]
           ) : ''}
