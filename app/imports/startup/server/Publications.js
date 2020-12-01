@@ -30,6 +30,16 @@ Meteor.publish(Recipes.userPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(Recipes.allPublicationName, function () {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Recipes.collection.find({ $or: [{ owner: username }, { publicAccess: true }] });
+  } else {
+    return Recipes.collection.find({ publicAccess: true });
+  }
+  return this.ready();
+});
+
 // Admin-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise publish nothing.
 Meteor.publish(Stuffs.adminPublicationName, function () {
