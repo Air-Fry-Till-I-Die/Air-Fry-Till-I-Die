@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image } from 'semantic-ui-react';
+import { Card, Image, Modal, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
@@ -21,11 +21,6 @@ class RecipeCard extends React.Component {
               Description:&nbsp;
               {this.props.recipe.description}
               <br/>
-              Ingredients:&nbsp;
-              {this.props.recipe.ingredients}
-              <br/>
-              Instructions:&nbsp;
-              {this.props.recipe.instructions}
             </Card.Description>
           </Card.Content>
           {/* <Card.Content extra>
@@ -39,6 +34,31 @@ class RecipeCard extends React.Component {
           <Card.Content extra>
             <AddNote owner={this.props.recipe.owner} contactId={this.props.recipe._id}/>
           </Card.Content> */}
+          <Modal
+              trigger={<Button>Show Recipe</Button>}
+              header={this.props.recipe.name}
+              image={this.props.recipe.image}
+              content={
+                <div style={{ color: 'black', fontSize: 20, paddingLeft: 20, paddingRight: 20, paddingBottom: 20 }}>
+                  <Image size='medium' src={this.props.recipe.image} centered/>
+                  Servings: {this.props.recipe.servings}
+                  <hr/>
+                  <p>
+                    Description:&nbsp;
+                    {this.props.recipe.description}
+                    <br/>
+                    <br/>
+                    Ingredients:&nbsp;
+                    {this.props.recipe.ingredients}
+                    <br/>
+                    <br/>
+                    Instructions:&nbsp;
+                    {this.props.recipe.instructions}
+                  </p>
+                </div>
+              }
+              actions={[{ key: 'done', content: 'Done', positive: true }]}
+          />
         </Card>
     );
   }

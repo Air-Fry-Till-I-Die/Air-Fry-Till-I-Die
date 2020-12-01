@@ -38,7 +38,7 @@ if (Inventory.collection.find().count() === 0) {
 
 if (Recipes.collection.find().count() === 0) {
   if (Meteor.settings.defaultRecipe) {
-    console.log('Creating default data for inventory.');
+    console.log('Creating default data for Recipes.');
     Meteor.settings.defaultRecipe.map(data => addRecipe(data));
   }
 }
