@@ -64,10 +64,46 @@
     { "name": "Chicken Katsu", "owner": "admin@foo.com", "servings": "2", "description": "Panko-breaded chicken breast", "image": "https://dinnerthendessert.com/wp-content/uploads/2019/02/Chicken-Katsu-2-500x500.jpg", "ingredients": ["chicken breast", "salt", "pepper", "egg", "panko", "flour"], "instructions": "test",
       "publicAccess": true
     },
-    { "name": "Tortilla Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Low calorie pizza with a tortilla crust", "image": "https://dinnerthendessert.com/wp-content/uploads/2015/07/Side-Pizza.jpg", "ingredients": ["tortilla", "pizza sauce", "italian seasoning", "mozzarella", "pepperoni"], "instructions": "test",
+    { "name": "Tortilla Pizza", "owner": "admin@foo.com", "servings": "1", "description": "Low calorie pizza with a tortilla crust", "image": "https://dinnerthendessert.com/wp-content/uploads/2015/07/Side-Pizza.jpg", "ingredients": ["tortilla", "pizza sauce", "italian seasoning", "mozzarella", "pepperoni"], "instructions": "test",
       "publicAccess": true
     },
-    { "name": "3-ingredient Crust Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Low calorie pizza with a greek yogurt crust", "image": "https://dinnerthendessert.com/wp-content/uploads/2015/07/Side-Pizza.jpg", "ingredients": ["tortilla", "pizza sauce", "italian seasoning", "mozzarella", "pepperoni"], "instructions": "test",
+    { "name": "3-ingredient Crust Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Low calorie pizza with a greek yogurt crust", "image": "https://masonfit.com/wp-content/uploads/2020/04/air-fryer-pizza-recipe-in-the-Ninja-Foodi-1024x1024.jpg", "ingredients": ["flour", "baking powder", "salt", "garlic powder", "greek yogurt", "pizza sauce", "italian seasoning", "mozzarella", "pepperoni"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Cheesy Bread Sticks", "owner": "admin@foo.com", "servings": "4", "description": "Cheesy bread sticks made from greek yogurt crust", "image": "https://masonfit.com/wp-content/uploads/2020/04/air-fryer-cheese-bread-1024x1024.jpg", "ingredients": ["flour", "baking powder", "parmesan", "garlic powder", "greek yogurt", "oil", "italian cheese"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Tofu Nuggets", "owner": "admin@foo.com", "servings": "2", "description": "Vegan Tofu Nuggets", "image": "https://veggiesociety.com/wp-content/uploads/2019/04/Tofu-Nuggets-Air-Fryer-Recipe-2.jpg", "ingredients": ["extra firm tofu", "nutritional yeast", "onion powder", "garlic powder"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Buffalo Chicken Tenders", "owner": "admin@foo.com", "servings": "2", "description": "Spicy buffalo chicken tenders", "image": "https://veggiesociety.com/wp-content/uploads/2019/04/Tofu-Nuggets-Air-Fryer-Recipe-2.jpg", "ingredients": ["chicken breast", "salt", "pepper", "egg", "flour", "panko", "buffalo sauce"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Breakfast Crunchwrap", "owner": "admin@foo.com", "servings": "1", "description": "Crunchy tortilla wrap inspired by Taco Bell", "image": "/images/crunchwrap.PNG", "ingredients": ["tortilla", "egg", "bacon", "cheddar cheese"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Breakfast Muffin", "owner": "admin@foo.com", "servings": "1", "description": "Breakfast sandwich inspired by the bacon & egg McMuffin", "image": "https://i.dailymail.co.uk/1s/2020/04/14/04/27158780-0-image-a-10_1586833504235.jpg", "ingredients": ["english muffin", "egg", "bacon", "cheddar cheese"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Potato Chips", "owner": "admin@foo.com", "servings": "1", "description": "Air fried potato chips", "image": "https://bitzngiggles.com/wp-content/uploads/2019/04/Air-Fryer-Potato-Chips-horiz.jpg", "ingredients": ["russet potato", "oil", "salt"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Crispy Broccoli", "owner": "admin@foo.com", "servings": "2", "description": "Asian inspired broccoli air fried to a crisp", "image": "https://i2.wp.com/gimmedelicious.com/wp-content/uploads/2020/02/10-Minute-Crispy-Air-Fryer-Broccoli-7.jpg", "ingredients": ["broccoli", "sesame oil", "soy sauce", "ginger powder", "lemon juice", "honey", "red pepper flakes"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Crispy Curry Drumsticks", "owner": "admin@foo.com", "servings": "4", "description": "Curry seasoned drumsticks", "image": "https://www.tasteofhome.com/wp-content/uploads/2019/11/Air-Fryer-Crispy-Curry-Drumsticks_EXPS_FT19_234619_F_1119_1-696x696.jpg", "ingredients": ["chicken drumsticks", "salt", "oil", "curry powder", "onion powder", "garlic powder"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Curried Roasted Potatoes", "owner": "admin@foo.com", "servings": "2", "description": "Curry seasoned potatoes", "image": "https://forktospoon.com/wp-content/uploads/2020/11/Apple-Cider-Donuts-2020-11-08T105553.376-2.jpg", "ingredients": ["russet potato", "salt", "oil", "curry powder", "pepper"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Curried Roasted Cauliflower", "owner": "admin@foo.com", "servings": "4", "description": "Curry seasoned cauliflower", "image": "https://i2.wp.com/airfrywithme.com/wp-content/uploads/2019/10/Curry-Roasted-Cauliflower.jpeg?resize=768%2C576&ssl=1", "ingredients": ["cauliflower", "salt", "oil", "curry powder", "pepper"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Chicken Tikka", "owner": "admin@foo.com", "servings": "2", "description": "Indian style shicken", "image": "https://g6t8s5u9.rocketcdn.me/wp-content/uploads/2019/02/Air-Fryer-Chicken-Tikka-1.jpg", "ingredients": ["chicken breast", "red pepper", "oil", "white onion", "tikka seasoning"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Onion Rings", "owner": "admin@foo.com", "servings": "1", "description": "Curry seasoned cauliflower", "image": "https://images.squarespace-cdn.com/content/v1/57bb2e8cb3db2b9076db6369/1535665478012-CT4JBZ4KDKFSEWHYCRHJ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg", "ingredients": ["white onion", "egg", "flour", "panko", "salt", "paprika", "pickle juice", "milk"], "instructions": "test",
       "publicAccess": true
     }
   ],
