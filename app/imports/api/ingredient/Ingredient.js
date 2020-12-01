@@ -13,7 +13,12 @@ class IngredientsCollection {
     this.schema = new SimpleSchema({
       name: String,
       servings: { type: Number, defaultValue: 1 },
+      unit: String,
       calories: Number,
+      fat: Number,
+      carbs: Number,
+      protein: Number,
+      sodium: Number,
       vegetarian: { type: Boolean, defaultValue: false },
       vegan: { type: Boolean, defaultValue: false },
     }, { tracker: Tracker });

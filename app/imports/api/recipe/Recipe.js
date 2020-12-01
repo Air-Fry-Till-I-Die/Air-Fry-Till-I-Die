@@ -22,6 +22,11 @@ class RecipeCollection {
         maxCount: 15,
       },  */
       instructions: String,
+      /*  instructions: {
+        type: Array,
+        minCount: 1,
+        maxCount: 15,
+      },  */
       publicAccess: Boolean,
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
