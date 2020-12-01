@@ -12,6 +12,7 @@ class RecipeCard extends React.Component {
             <Card.Header style={{ fontsize: 20 }}>
               {this.props.recipe.name}
             </Card.Header>
+            <Image src={this.props.recipe.image} wrapped ui={true} />
             <Card.Meta>
               Servings: {this.props.recipe.servings}
               <hr/>

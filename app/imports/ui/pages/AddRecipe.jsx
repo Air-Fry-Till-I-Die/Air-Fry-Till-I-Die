@@ -12,6 +12,7 @@ const formSchema = new SimpleSchema({
   name: String,
   servings: Number,
   description: String,
+  image: String,
   ingredients: String,
   instructions: String,
   publicAccess: Boolean,
@@ -24,9 +25,9 @@ class AddRecipe extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { name, servings, description, ingredients, instructions, publicAccess } = data;
+    const { name, servings, description, image, ingredients, instructions, publicAccess } = data;
     const owner = Meteor.user().username;
-    Recipes.collection.insert({ name, owner, servings, description, ingredients, instructions, publicAccess },
+    Recipes.collection.insert({ name, owner, servings, description, image, ingredients, instructions, publicAccess },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -49,6 +50,7 @@ class AddRecipe extends React.Component {
                 <TextField name='name'/>
                 <NumField name='servings' decimal={false}/>
                 <TextField name='description'/>
+                <TextField name='image'/>
                 <TextField name='ingredients'/>
                 <TextField name='instructions'/>
                 <BoolField name='publicAccess'/>
