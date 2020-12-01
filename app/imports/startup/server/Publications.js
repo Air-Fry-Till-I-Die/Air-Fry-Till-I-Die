@@ -34,10 +34,8 @@ Meteor.publish(Recipes.allPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
     return Recipes.collection.find({ $or: [{ owner: username }, { publicAccess: true }] });
-  } else {
-    return Recipes.collection.find({ publicAccess: true });
   }
-  return this.ready();
+  return Recipes.collection.find({ publicAccess: true });
 });
 
 // Admin-level publication.
