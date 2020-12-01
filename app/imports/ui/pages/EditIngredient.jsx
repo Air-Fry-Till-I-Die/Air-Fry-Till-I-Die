@@ -1,8 +1,7 @@
 import React from 'react';
 import { Grid, Segment, Header } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, NumField, BoolField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, NumField, BoolField, SubmitField, TextField, SelectField } from 'uniforms-semantic';
 import swal from 'sweetalert';
-import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Recipes } from '../../api/recipe/Recipe';
@@ -11,10 +10,14 @@ import { Recipes } from '../../api/recipe/Recipe';
 const formSchema = new SimpleSchema({
   name: String,
   servings: Number,
-  description: String,
-  ingredients: String,
-  instructions: String,
-  publicAccess: Boolean,
+  unit: String,
+  calories: Number,
+  fat: Number,
+  carbs: Number,
+  protein: Number,
+  sodium: Number,
+  vegetarian: Boolean,
+  vegan: Boolean,
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
@@ -24,17 +27,16 @@ class EditIngredient extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { name, servings, description, ingredients, instructions, publicAccess } = data;
-    const owner = Meteor.user().username;
-    Recipes.collection.insert({ name, owner, servings, description, ingredients, instructions, publicAccess },
-      (error) => {
-        if (error) {
-          swal('Error', error.message, 'error');
-        } else {
-          swal('Success', 'Item added successfully', 'success');
-          formRef.reset();
-        }
-      });
+    const { name, servings, unit, calories, fat, carbs, protein, sodium, vegetarian, vegan } = data;
+    Recipes.collection.insert({ name, servings, unit, calories, fat, carbs, protein, sodium, vegetarian, vegan },
+        (error) => {
+          if (error) {
+            swal('Error', error.message, 'error');
+          } else {
+            swal('Success', 'Item added successfully', 'success');
+            formRef.reset();
+          }
+        });
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -48,10 +50,14 @@ class EditIngredient extends React.Component {
               <Segment>
                 <TextField name='name'/>
                 <NumField name='servings' decimal={false}/>
-                <TextField name='description'/>
-                <TextField name='ingredients'/>
-                <TextField name='instructions'/>
-                <BoolField name='publicAccess'/>
+                <SelectField name='unit' showInlineError={true} placeholder={'Select unit of measurement'} />
+                <NumField name='calories' decimal={false}/>
+                <NumField name='fat' decimal={false}/>
+                <NumField name='carbohydrates' decimal={false}/>
+                <NumField name='protein' decimal={false}/>
+                <NumField name='sodium' decimal={false}/>
+                <BoolField name='vegetarian'/>
+                <BoolField name='vegan'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
