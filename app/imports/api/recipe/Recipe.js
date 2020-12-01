@@ -16,6 +16,7 @@ class RecipeCollection {
       servings: Number,
       description: String,
       ingredients: String,
+      image: String,
       /*  ingredients: {
         type: Array,
         minCount: 1,
