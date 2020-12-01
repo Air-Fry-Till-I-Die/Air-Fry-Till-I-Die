@@ -13,7 +13,7 @@ class IngredientsCollection {
     this.schema = new SimpleSchema({
       name: String,
       servings: { type: Number, defaultValue: 1 },
-      unit: String,
+      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb'] },
       calories: Number,
       fat: Number,
       carbs: Number,
