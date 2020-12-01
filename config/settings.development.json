@@ -13,10 +13,61 @@
     { "name": "Air Fried Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Greek Yogurt Crust Pizza", "image": "https://masonfit.com/wp-content/uploads/2020/04/air-fryer-pepperoni-pizza-recipe-1024x683.jpg", "ingredients": ["flour", "baking powder", "salt", "garlic powder", "fat free greek yogurt", "pizza sauce", "mozzarella", "pepperoni", "italian seasoning"], "instructions": "test",
       "publicAccess": true
     },
-    { "name": "Baked Potato", "owner": "admin@foo.com", "servings": "2", "description": "Air Fried Baked Potato", "image": "https://masonfit.com/wp-content/uploads/2020/11/Ninja-Foodi-baked-potatoes-featured-image-760x400.jpg", "ingredients": ["russet potato", "oil", "salt"], "instructions": "test",
+    { "name": "Baked Potato", "owner": "admin@foo.com", "servings": "4", "description": "Air Fried Baked Potato", "image": "https://masonfit.com/wp-content/uploads/2020/11/Ninja-Foodi-baked-potatoes-featured-image-760x400.jpg", "ingredients": ["russet potato", "oil", "salt"], "instructions": "test",
       "publicAccess": true
     },
-    { "name": "Potato Skins", "owner": "admin@foo.com", "servings": "2", "description": "Potato Skins from air fried baked potatoes", "image": "https://masonfit.com/wp-content/uploads/2020/11/air-fryer-twice-baked-potatoes-featured-image-760x400.jpg", "ingredients": ["russet potato", "salt", "bacon", "fat free greek yogurt", "butter", "cheddar", "pepper", "green onion"], "instructions": "test",
+    { "name": "Potato Skins", "owner": "admin@foo.com", "servings": "4", "description": "Potato Skins from air fried baked potatoes", "image": "https://masonfit.com/wp-content/uploads/2020/11/air-fryer-twice-baked-potatoes-featured-image-760x400.jpg", "ingredients": ["russet potato", "salt", "bacon", "fat free greek yogurt", "butter", "cheddar", "pepper", "green onion"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Buffalo Chicken Thighs", "owner": "admin@foo.com", "servings": "3", "description": "Buffalo seasoned chicken thighs", "image": "https://masonfit.com/wp-content/uploads/2020/11/air-fried-buffalo-chicken-thighs-featured-image-760x400.jpg", "ingredients": ["chicken thigh", "oil", "paprika", "chili powder", "onion powder", "garlic powder", "dry mustard", "cayenne pepper", "salt", "pepper"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Teriyaki Chicken Thighs", "owner": "admin@foo.com", "servings": "3", "description": "Sweet and salty teriyaki-style chicken thighs", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd0c9AoZn8DR5K_bmQ5K4DpeIsP_rKv2hGnQ&usqp=CAU", "ingredients": ["chicken thigh", "sesame oil", "soy sauce", "ginger powder", "honey"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Crispy Brussels Sprouts", "owner": "admin@foo.com", "servings": "3", "description": "Brussels Sprouts air fried to a crisp", "image": "https://jenniferbanz.com/wp-content/uploads/2018/09/Air-fryer-brussels-sprouts-3.jpg", "ingredients": ["brussels sprouts", "oil", "salt", "pepper"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Sweet Potato Fries", "owner": "admin@foo.com", "servings": "2", "description": "Spicy and crispy sweet potato fries", "image": "https://kalynskitchen.com/wp-content/uploads/2017/11/2-650-air-fryer-sweet-potato-fries-copy.jpg", "ingredients": ["sweet potato", "oil", "garlic powder", "ginger powder", "chili powder", "salt"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Classic Fries", "owner": "admin@foo.com", "servings": "2", "description": "Crispy and salty fries", "image": "https://bestrecipebox.com/images/Air-Fryer-Homemade-Fries-1-500x500.jpg", "ingredients": ["russet potato", "oil", "salt"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Cajun Fries", "owner": "admin@foo.com", "servings": "2", "description": "Spicy cajun-seasoned fries", "image": "https://masonfit.com/wp-content/uploads/2020/08/air-fryer-Five-Guys-cajun-fries-copycat-recipe-735x919.jpg", "ingredients": ["russet potato", "oil", "paprika", "oregano", "garlic powder", "onion powder", "red pepper flakes", "pepper", "salt"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Garlic Parmesan Fries", "owner": "admin@foo.com", "servings": "2", "description": "Cheesy and salty fries", "image": "https://masonfit.com/wp-content/uploads/2020/10/garlic-parmesan-crinkle-cut-fries-910x1024.jpg", "ingredients": ["russet potato", "oil", "parmesan", "garlic powder", "pepper"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Garlic Parmesan Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Unbreaded chicken nuggets with cheese and garlic", "image": "https://masonfit.com/wp-content/uploads/2020/08/garlic-parmesan-air-fryer-chicken-nuggets-910x1024.jpg", "ingredients": ["chicken breast", "oil", "parmesan", "garlic powder", "red pepper flakes", "oregano", "parsley", "salt"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Chipotle Lime Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Unbreaded chicken nuggets with zesty citrus twist", "image": "https://masonfit.com/wp-content/uploads/2020/08/chipotle-lime-air-fryer-chicken-nuggets-910x1024.jpg", "ingredients": ["chicken breast", "oil", "lime juice", "chipotle chili powder", "salt"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Lemon Pepper Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Unbreaded chicken nuggets with a classic lemon flavor", "image": "https://masonfit.com/wp-content/uploads/2020/08/air-fried-lemon-pepper-chicken-nuggets-910x1024.jpg", "ingredients": ["chicken breast", "oil", "lemon juice", "lemon pepper seasoning", "parsley"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Nashville Style Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Unbreaded chicken nuggets inspired by Music City", "image": "https://masonfit.com/wp-content/uploads/2020/08/air-fryer-Nashville-Hot-spicy-chicken-nuggets-910x1024.jpg", "ingredients": ["chicken breast", "oil", "cayenne pepper", "paprika", "chili powder", "garlic powder", "pepper", "red pepper flakes", "brown sugar"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Buttermilk Style Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Unbreaded chicken nuggets inspired by Chik Fil A", "image": "https://masonfit.com/wp-content/uploads/2020/08/how-to-make-Chick-Fil-A-grilled-nuggets-in-an-air-fryer-910x1024.jpg", "ingredients": ["chicken breast", "pickle juice", "milk", "powdered sugar", "salt", "garlic powder", "pepper", "paprika"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Cajun Style Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Cajun seasoned unbreaded chicken nuggets", "image": "https://masonfit.com/wp-content/uploads/2020/08/cajun-air-fryer-chicken-nuggets-910x1024.jpg", "ingredients": ["chicken breast", "oil", "sugar", "paprika", "salt", "garlic powder", "onion powder", "oregano", "red pepper flakes", "pepper"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Teriyaki Style Chicken Bites", "owner": "admin@foo.com", "servings": "4", "description": "Sweet and salty teriyaki-style chicken breast nuggets", "image": "https://hips.hearstapps.com/delish/assets/17/26/1498598755-teriyaki-chicken.jpg", "ingredients": ["chicken breast", "sesame oil", "soy sauce", "ginger powder", "honey"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Chicken Katsu", "owner": "admin@foo.com", "servings": "2", "description": "Panko-breaded chicken breast", "image": "https://dinnerthendessert.com/wp-content/uploads/2019/02/Chicken-Katsu-2-500x500.jpg", "ingredients": ["chicken breast", "salt", "pepper", "egg", "panko", "flour"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "Tortilla Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Low calorie pizza with a tortilla crust", "image": "https://dinnerthendessert.com/wp-content/uploads/2015/07/Side-Pizza.jpg", "ingredients": ["tortilla", "pizza sauce", "italian seasoning", "mozzarella", "pepperoni"], "instructions": "test",
+      "publicAccess": true
+    },
+    { "name": "3-ingredient Crust Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Low calorie pizza with a greek yogurt crust", "image": "https://dinnerthendessert.com/wp-content/uploads/2015/07/Side-Pizza.jpg", "ingredients": ["tortilla", "pizza sauce", "italian seasoning", "mozzarella", "pepperoni"], "instructions": "test",
       "publicAccess": true
     }
   ],
