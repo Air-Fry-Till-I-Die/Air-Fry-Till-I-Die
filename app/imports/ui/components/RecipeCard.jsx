@@ -49,7 +49,8 @@ class RecipeCard extends React.Component {
                     <br/>
                     <br/>
                     Ingredients:&nbsp;
-                    {this.props.recipe.ingredients}
+                    <br/>
+                    {this.props.recipe.ingredients.map((ingr, index) => <p key={index}>{ingr}</p>)}
                     <br/>
                     <br/>
                     Instructions:&nbsp;
