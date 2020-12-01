@@ -25,7 +25,7 @@ Meteor.publish(Inventory.userPublicationName, function () {
 Meteor.publish(Recipes.userPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
-    return Recipes.collection.find({ owner: username });
+    return Recipes.collection.find({ owner: username } || { publicAccess: true });
   }
   return this.ready();
 });

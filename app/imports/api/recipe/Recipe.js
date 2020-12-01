@@ -15,7 +15,9 @@ class RecipeCollection {
       owner: String,
       servings: Number,
       description: String,
-      ingredients: String,
+      image: String,
+      ingredients: { label: 'ingredients', type: Array },
+      'ingredients.$': { type: String },
       /*  ingredients: {
         type: Array,
         minCount: 1,
