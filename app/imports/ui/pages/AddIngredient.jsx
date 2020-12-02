@@ -9,6 +9,7 @@ import { Recipes } from '../../api/recipe/Recipe';
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   name: String,
+  image: String,
   servings: Number,
   unit: String,
   calories: Number,
@@ -27,8 +28,8 @@ class AddIngredient extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { name, servings, unit, calories, fat, carbs, protein, sodium, vegetarian, vegan } = data;
-    Recipes.collection.insert({ name, servings, unit, calories, fat, carbs, protein, sodium, vegetarian, vegan },
+    const { name, image, servings, unit, calories, fat, carbs, protein, sodium, vegetarian, vegan } = data;
+    Recipes.collection.insert({ name, image, servings, unit, calories, fat, carbs, protein, sodium, vegetarian, vegan },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -49,6 +50,7 @@ class AddIngredient extends React.Component {
             <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
                 <TextField name='name'/>
+                <TextField name='image'/>
                 <NumField name='servings' decimal={false}/>
                 <SelectField name='unit' showInlineError={true} placeholder={'Select unit of measurement'} />
                 <NumField name='calories' decimal={false}/>
