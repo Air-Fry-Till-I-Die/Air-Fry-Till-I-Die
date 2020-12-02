@@ -15,7 +15,7 @@ class IngredientCard extends React.Component {
         <Card.Content>
           <Image src={this.props.ingredient.image}/>
           <Card.Header>{this.props.ingredient.name}</Card.Header>
-          <Card.Description>Servings: {this.props.ingredient.servings}</Card.Description>
+          <Card.Description>Servings: {this.props.ingredient.servings} {this.props.ingredient.unit}</Card.Description>
         </Card.Content>
         <Modal
             trigger={<Button>Show Nutrition</Button>}
