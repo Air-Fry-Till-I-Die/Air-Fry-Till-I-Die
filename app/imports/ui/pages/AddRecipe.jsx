@@ -13,7 +13,9 @@ const formSchema = new SimpleSchema({
   servings: Number,
   description: String,
   image: String,
-  ingredients: String,
+  ingredients: { label: 'ingredients', type: Array },
+  'ingredients.$': { type: Array },
+  'ingredients.$.$': { type: String },
   instructions: String,
   publicAccess: Boolean,
 });
@@ -26,6 +28,7 @@ class AddRecipe extends React.Component {
   /** On submit, insert the data. */
   submit(data, formRef) {
     const { name, servings, description, image, ingredients, instructions, publicAccess } = data;
+    ingredients.push(1);
     const owner = Meteor.user().username;
     Recipes.collection.insert({ name, owner, servings, description, image, ingredients, instructions, publicAccess },
       (error) => {
@@ -42,7 +45,7 @@ class AddRecipe extends React.Component {
   render() {
     let fRef = null;
     return (
-        <Grid container centered>
+        <Grid id='add-recipe-page' container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Add Recipe</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
