@@ -8,6 +8,7 @@
     {
       "name": "Russet Potato",
       "image": "https://p0.pikrepo.com/preview/830/410/two-brown-potatoes-on-white-surface.jpg",
+      "inventory": 2,
       "servings": 1,
       "unit": "",
       "calories": 168,
@@ -16,11 +17,13 @@
       "protein": 5,
       "sodium": 24,
       "vegetarian": true,
-      "vegan": true
+      "vegan": true,
+      "owner": "john@foo.com"
     },
     {
       "name": "oil",
       "image": "https://images.eatthismuch.com/site_media/img/266_erin_m_4ba6ff1c-ff73-4e96-a5b3-b844d24d3719.png",
+      "inventory": 12,
       "servings": 1,
       "unit": "Tbsp",
       "calories": 40,
@@ -29,11 +32,14 @@
       "protein": 0,
       "sodium": 0,
       "vegetarian": true,
-      "vegan": true
+      "vegan": true,
+      "owner": "john@foo.com"
+
     },
     {
       "name": "salt",
       "image": "https://static.toiimg.com/thumb/msid-73927404,imgsize-1802501,width-800,height-600,resizemode-75/73927404.jpg",
+      "inventory": 30,
       "servings": 1,
       "unit": "Tsp",
       "calories": 0,
@@ -42,11 +48,13 @@
       "protein": 0,
       "sodium": 2325,
       "vegetarian": true,
-      "vegan": true
+      "vegan": true,
+      "owner": "john@foo.com"
     },
     {
       "name": "bacon",
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
+      "inventory": 6,
       "servings": 1,
       "unit": "",
       "calories": 40,
@@ -55,11 +63,13 @@
       "protein": 6,
       "sodium": 180,
       "vegetarian": false,
-      "vegan": false
+      "vegan": false,
+      "owner": "john@foo.com"
     },
     {
       "name": "fat free greek yogurt",
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
+      "inventory": 4,
       "servings": 1,
       "unit": "Cup",
       "calories": 120,
@@ -68,7 +78,8 @@
       "protein": 22,
       "sodium": 85,
       "vegetarian": true,
-      "vegan": false
+      "vegan": false,
+      "owner": "john@foo.com"
     }
   ],
 
