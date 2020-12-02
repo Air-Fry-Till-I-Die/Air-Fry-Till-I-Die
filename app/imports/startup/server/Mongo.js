@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Inventory } from '../../api/inventory/Inventory.js';
 import { Recipes } from '../../api/recipe/Recipe.js';
-import { Ingredients } from '../../api/ingredient/Ingredient.js'
+import { Ingredients } from '../../api/ingredient/Ingredient.js';
 /* eslint-disable no-console */
 
 /** Initialize the database with a default data document. */
