@@ -36,6 +36,26 @@ class NavBar {
     await testController.click('#login-dropdown');
     await testController.click('#login-dropdown-sign-up');
   }
+
+  async gotoAllRecipePage(testController) {
+    await this.ensureLogout(testController);
+    await testController.click('#navbar-all-recipe');
+  }
+
+  async gotoAddRecipePage(testController) {
+    await testController.expect(Selector('#navbar-current-user').exists).ok();
+    await testController.click('#navbar-add-recipe');
+  }
+
+  async gotoMyRecipePage(testController) {
+    await testController.expect(Selector('#navbar-current-user').exists).ok();
+    await testController.click('#navbar-my-recipe');
+  }
+
+  async gotoMyInventoryPage(testController) {
+    await testController.expect(Selector('#navbar-current-user').exists).ok();
+    await testController.click('#navbar-my-inventory');
+  }
 }
 
 export const navBar = new NavBar();

@@ -17,7 +17,7 @@ class AllRecipe extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
+        <Container id='all-recipe-page'>
           <Header as="h2" textAlign="center">List Recipes</Header>
           <Card.Group itemsPerRow={4} centered>
             {this.props.recipes.map((recipe, index) => <RecipeCard key={index}

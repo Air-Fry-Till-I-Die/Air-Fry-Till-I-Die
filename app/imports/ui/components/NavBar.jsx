@@ -15,16 +15,16 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header inverted as='h1'>Air Fry Till I Die</Header>
           </Menu.Item>
-          <Menu.Item key='all' style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/all-recipes">
+          <Menu.Item id="navbar-all-recipe" key='all' style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/all-recipes">
             <Header inverted as='h2'>All Recipes</Header>
           </Menu.Item>
           <Menu.Item style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/">
             <Header inverted as='h2'>Vendors</Header>
           </Menu.Item>
           {this.props.currentUser ? (
-              [<Menu.Item position='right' as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Recipe</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>My Recipes</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/inventory" key='inventory'>My Inventory</Menu.Item>,
+              [<Menu.Item id='navbar-add-recipe' position='right' as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Recipe</Menu.Item>,
+                <Menu.Item id='navbar-my-recipe' as={NavLink} activeClassName="active" exact to="/list" key='list'>My Recipes</Menu.Item>,
+              <Menu.Item id='navbar-my-inventory' as={NavLink} activeClassName="active" exact to="/inventory" key='inventory'>My Inventory</Menu.Item>,
               ]
           ) : ''}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
