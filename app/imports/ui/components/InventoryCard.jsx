@@ -11,7 +11,8 @@ class InventoryCard extends React.Component {
         <Card.Content>
           <Image src={this.props.inventory.image}/>
           <Card.Header>{this.props.inventory.name}</Card.Header>
-          <Card.Description>Servings: {this.props.inventory.servings}</Card.Description>
+          <Card.Description>Amount: {this.props.inventory.inventory}<br/>
+          Servings: {this.props.inventory.servings * this.props.inventory.inventory}</Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Link to={'/nutrition/'}>Nutrition</Link>

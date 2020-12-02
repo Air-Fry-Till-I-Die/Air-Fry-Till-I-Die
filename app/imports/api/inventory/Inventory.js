@@ -12,8 +12,11 @@ class InventoryCollection {
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       name: String,
+      inventory: Number,
+      owner: String,
+      image: String,
       servings: { type: Number, defaultValue: 1 },
-      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb'] },
+      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ' '] },
       calories: Number,
       fat: Number,
       carbs: Number,

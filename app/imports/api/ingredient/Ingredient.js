@@ -6,7 +6,7 @@ import { Tracker } from 'meteor/tracker';
 class IngredientsCollection {
   constructor() {
     // The name of this collection.
-    this.name = 'RecipeCollection';
+    this.name = 'IngredientsCollection';
     // Define the Mongo collection.
     this.collection = new Mongo.Collection(this.name);
     // Define the structure of each document in the collection.
@@ -14,7 +14,7 @@ class IngredientsCollection {
       name: String,
       image: String,
       servings: { type: Number, defaultValue: 1 },
-      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ''] },
+      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ' '] },
       calories: Number,
       fat: Number,
       carbs: Number,

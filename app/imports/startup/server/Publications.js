@@ -3,6 +3,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Inventory } from '../../api/inventory/Inventory';
 import { Recipes } from '../../api/recipe/Recipe';
+import { Ingredients } from '../../api/ingredient/Ingredient';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
@@ -36,6 +37,10 @@ Meteor.publish(Recipes.allPublicationName, function () {
     return Recipes.collection.find({ $or: [{ owner: username }, { publicAccess: true }] });
   }
   return Recipes.collection.find({ publicAccess: true });
+});
+
+Meteor.publish(Ingredients.publicPublicationName, function () {
+  return Ingredients.collection.find();
 });
 
 // Admin-level publication.
