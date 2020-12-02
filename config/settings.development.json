@@ -109,8 +109,19 @@
   ],
 
   "defaultIngredients": [
-    { "name": "Apple", "image": "https://i5.walmartimages.ca/images/Enlarge/561/117/6000198561117.jpg", "owner": "john@foo.com", "servings": "2" },
-    { "name": "Flour", "image": "https://i5.walmartimages.com/asr/769b7ea6-1afd-4aad-9993-9a6ea57ef7b7_1.be2a4f66ed4a3c53b4eb76c3a99837dd.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff", "owner": "john@foo.com", "servings": "12" }
+    {
+      "name": "Russet Potato",
+      "image": "https://p0.pikrepo.com/preview/830/410/two-brown-potatoes-on-white-surface.jpg",
+      "servings": 1,
+      "unit": "lb",
+      "calories": 168,
+      "fat": 0,
+      "carbs": 37,
+      "protein": 5,
+      "sodium": 24,
+      "vegetarian": true,
+      "vegan": true
+    }
   ],
 
   "monti": {

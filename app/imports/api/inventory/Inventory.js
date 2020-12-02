@@ -12,9 +12,15 @@ class InventoryCollection {
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       name: String,
-      image: String,
-      servings: Number,
-      owner: String,
+      servings: { type: Number, defaultValue: 1 },
+      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb'] },
+      calories: Number,
+      fat: Number,
+      carbs: Number,
+      protein: Number,
+      sodium: Number,
+      vegetarian: { type: Boolean, defaultValue: false },
+      vegan: { type: Boolean, defaultValue: false },
     }, { tracker: Tracker });
 
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
