@@ -8,10 +8,8 @@
     {
       "name": "Russet Potato",
       "image": "https://p0.pikrepo.com/preview/830/410/two-brown-potatoes-on-white-surface.jpg",
-      "owner": "admin@foo.com",
-      "inventory": 1,
       "servings": 1,
-      "unit": "Tsp",
+      "unit": "",
       "calories": 168,
       "fat": 0,
       "carbs": 37,
@@ -19,14 +17,63 @@
       "sodium": 24,
       "vegetarian": true,
       "vegan": true
+    },
+    {
+      "name": "oil",
+      "image": "https://images.eatthismuch.com/site_media/img/266_erin_m_4ba6ff1c-ff73-4e96-a5b3-b844d24d3719.png",
+      "servings": 1,
+      "unit": "Tsp",
+      "calories": 40,
+      "fat": 4.5,
+      "carbs": 0,
+      "protein": 0,
+      "sodium": 0,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "salt",
+      "image": "https://static.toiimg.com/thumb/msid-73927404,imgsize-1802501,width-800,height-600,resizemode-75/73927404.jpg",
+      "servings": 1,
+      "unit": "Tsp",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "sodium": 2325,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "bacon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
+      "servings": 1,
+      "unit": "",
+      "calories": 40,
+      "fat": 1.5,
+      "carbs": 0,
+      "protein": 6,
+      "sodium": 180,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "fat free greek yogurt",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
+      "servings": 1,
+      "unit": "Cup",
+      "calories": 120,
+      "fat": 0,
+      "carbs": 9,
+      "protein": 22,
+      "sodium": 85,
+      "vegetarian": true,
+      "vegan": true
     }
   ],
 
   "defaultRecipe": [
-    { "name": "Air Fried Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Greek Yogurt Crust Pizza", "image": "https://masonfit.com/wp-content/uploads/2020/04/air-fryer-pepperoni-pizza-recipe-1024x683.jpg", "ingredients": ["flour", "baking powder", "salt", "garlic powder", "fat free greek yogurt", "pizza sauce", "mozzarella", "pepperoni", "italian seasoning"], "instructions": "test",
-      "publicAccess": true
-    },
-    { "name": "Baked Potato", "owner": "admin@foo.com", "servings": "4", "description": "Air Fried Baked Potato", "image": "https://masonfit.com/wp-content/uploads/2020/11/Ninja-Foodi-baked-potatoes-featured-image-760x400.jpg", "ingredients": ["russet potato", "oil", "salt"], "instructions": "test",
+    { "name": "Baked Potato", "owner": "admin@foo.com", "servings": "4", "description": "Air Fried Baked Potato", "image": "https://masonfit.com/wp-content/uploads/2020/11/Ninja-Foodi-baked-potatoes-featured-image-760x400.jpg", "ingredients": [["russet potato", 1], ["oil", 1], ["salt", 1]], "instructions": "test",
       "publicAccess": true
     },
     { "name": "Potato Skins", "owner": "admin@foo.com", "servings": "4", "description": "Potato Skins from air fried baked potatoes", "image": "https://masonfit.com/wp-content/uploads/2020/11/air-fryer-twice-baked-potatoes-featured-image-760x400.jpg", "ingredients": ["russet potato", "salt", "bacon", "fat free greek yogurt", "butter", "cheddar", "pepper", "green onion"], "instructions": "test",
@@ -121,17 +168,69 @@
     }
   ],
 
-  "defaultIngredient": [
+  "defaultIngredients": [
     {
       "name": "Russet Potato",
       "image": "https://p0.pikrepo.com/preview/830/410/two-brown-potatoes-on-white-surface.jpg",
       "servings": 1,
-      "unit": "Tsp",
+      "unit": "",
       "calories": 168,
       "fat": 0,
       "carbs": 37,
       "protein": 5,
       "sodium": 24,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "oil",
+      "image": "https://images.eatthismuch.com/site_media/img/266_erin_m_4ba6ff1c-ff73-4e96-a5b3-b844d24d3719.png",
+      "servings": 1,
+      "unit": "Tsp",
+      "calories": 40,
+      "fat": 4.5,
+      "carbs": 0,
+      "protein": 0,
+      "sodium": 0,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "salt",
+      "image": "https://static.toiimg.com/thumb/msid-73927404,imgsize-1802501,width-800,height-600,resizemode-75/73927404.jpg",
+      "servings": 1,
+      "unit": "Tsp",
+      "calories": 0,
+      "fat": 0,
+      "carbs": 0,
+      "protein": 0,
+      "sodium": 2325,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "bacon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
+      "servings": 1,
+      "unit": "",
+      "calories": 40,
+      "fat": 1.5,
+      "carbs": 0,
+      "protein": 6,
+      "sodium": 180,
+      "vegetarian": true,
+      "vegan": true
+    },
+    {
+      "name": "fat free greek yogurt",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
+      "servings": 1,
+      "unit": "Cup",
+      "calories": 120,
+      "fat": 0,
+      "carbs": 9,
+      "protein": 22,
+      "sodium": 85,
       "vegetarian": true,
       "vegan": true
     }
