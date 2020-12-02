@@ -54,8 +54,8 @@
       "carbs": 0,
       "protein": 6,
       "sodium": 180,
-      "vegetarian": true,
-      "vegan": true
+      "vegetarian": false,
+      "vegan": false
     },
     {
       "name": "fat free greek yogurt",
@@ -68,11 +68,15 @@
       "protein": 22,
       "sodium": 85,
       "vegetarian": true,
-      "vegan": true
+      "vegan": false
     }
   ],
 
   "defaultRecipe": [
+    { "name": "Air Fried Pizza", "owner": "admin@foo.com", "servings": "2", "description": "Greek Yogurt Crust Pizza", "image": "https://masonfit.com/wp-content/uploads/2020/04/air-fryer-pepperoni-pizza-recipe-1024x683.jpg", "ingredients": ["flour", "baking powder", "salt", "garlic powder", "fat free greek yogurt", "pizza sauce", "mozzarella", "pepperoni", "italian seasoning"], "instructions": "test",
+      "publicAccess": true
+    },
+
     { "name": "Baked Potato", "owner": "admin@foo.com", "servings": "4", "description": "Air Fried Baked Potato", "image": "https://masonfit.com/wp-content/uploads/2020/11/Ninja-Foodi-baked-potatoes-featured-image-760x400.jpg", "ingredients": [["russet potato", 1], ["oil", 1], ["salt", 1]], "instructions": "test",
       "publicAccess": true
     },
