@@ -50,7 +50,7 @@ class RecipeCard extends React.Component {
                     <br/>
                     Ingredients:&nbsp;
                     <br/>
-                    {this.props.recipe.ingredients.map((ingr, index) => <div key={index}>{ingr[0]} {ingr[1]}</div>)}
+                    {this.props.recipe.ingredients.map((ingr, index) => <div key={index}>{ingr[0]} - {ingr[1]}</div>)}
                     <br/>
                     <br/>
                     Instructions:&nbsp;

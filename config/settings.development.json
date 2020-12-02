@@ -6,69 +6,8 @@
 
   "defaultInventory": [
     {
-      "name": "Russet Potato",
-      "image": "https://p0.pikrepo.com/preview/830/410/two-brown-potatoes-on-white-surface.jpg",
-      "servings": 1,
-      "unit": "",
-      "calories": 168,
-      "fat": 0,
-      "carbs": 37,
-      "protein": 5,
-      "sodium": 24,
-      "vegetarian": true,
-      "vegan": true
-    },
-    {
-      "name": "oil",
-      "image": "https://images.eatthismuch.com/site_media/img/266_erin_m_4ba6ff1c-ff73-4e96-a5b3-b844d24d3719.png",
-      "servings": 1,
-      "unit": "Tbsp",
-      "calories": 40,
-      "fat": 4.5,
-      "carbs": 0,
-      "protein": 0,
-      "sodium": 0,
-      "vegetarian": true,
-      "vegan": true
-    },
-    {
-      "name": "salt",
-      "image": "https://static.toiimg.com/thumb/msid-73927404,imgsize-1802501,width-800,height-600,resizemode-75/73927404.jpg",
-      "servings": 1,
-      "unit": "Tsp",
-      "calories": 0,
-      "fat": 0,
-      "carbs": 0,
-      "protein": 0,
-      "sodium": 2325,
-      "vegetarian": true,
-      "vegan": true
-    },
-    {
-      "name": "bacon",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
-      "servings": 1,
-      "unit": "",
-      "calories": 40,
-      "fat": 1.5,
-      "carbs": 0,
-      "protein": 6,
-      "sodium": 180,
-      "vegetarian": false,
-      "vegan": false
-    },
-    {
-      "name": "fat free greek yogurt",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Made20bacon.png",
-      "servings": 1,
-      "unit": "Cup",
-      "calories": 120,
-      "fat": 0,
-      "carbs": 9,
-      "protein": 22,
-      "sodium": 85,
-      "vegetarian": true,
-      "vegan": false
+      "name": "john@foo.com",
+      "ingredients": [["flour", 12], ["baking powder", 12], ["salt", 12], ["garlic powder", 25], ["fat free greek yogurt", 12], ["pizza sauce", 5], ["mozzarella", 4], ["pepperoni", 4], ["italian seasoning", 25], ["russet potato", 3], ["oil", 56]]
     }
   ],
 
