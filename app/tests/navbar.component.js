@@ -56,6 +56,10 @@ class NavBar {
     await testController.expect(Selector('#navbar-current-user').exists).ok();
     await testController.click('#navbar-my-inventory');
   }
+
+  async gotoListIngredientsPage(testController) {
+    await testController.click('#navbar-list-ingredients');
+  }
 }
 
 export const navBar = new NavBar();

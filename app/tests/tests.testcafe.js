@@ -6,6 +6,7 @@ import { allRecipePage } from './allrecipe.page';
 import { addRecipePage } from './addrecipe.page';
 import { myRecipePage } from './myrecipe.page';
 import { myInventoryPage } from './myinventory.page';
+import { listIngredientsPage } from './listingredients.page';
 /* global fixture:false, test:false */
 
 /** Credentials for one of the sample users defined in settings.development.json. */
@@ -31,7 +32,7 @@ test('Test that All Recipes page is displayed', async (testController) => {
   await allRecipePage.isDisplayed(testController);
 });
 
-test('Test that Add Recipes, My Recipes, and My Inventory page is displayed', async (testController) => {
+test('Test that Add Recipes, My Recipes, My Inventory page is displayed', async (testController) => {
   await navBar.gotoSigninPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.isLoggedIn(testController, credentials.username);
@@ -41,6 +42,8 @@ test('Test that Add Recipes, My Recipes, and My Inventory page is displayed', as
   await myRecipePage.isDisplayed(testController);
   await navBar.gotoMyInventoryPage(testController);
   await myInventoryPage.isDisplayed(testController);
+  await navBar.gotoListIngredientsPage(testController);
+  await listIngredientsPage.isDisplayed(testController);
 });
 
 test('Test that Add Recipes Form works', async (testController) => {

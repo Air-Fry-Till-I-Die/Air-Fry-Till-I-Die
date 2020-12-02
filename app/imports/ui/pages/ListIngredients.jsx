@@ -17,7 +17,7 @@ class ListIngredients extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
+        <Container id='list-ingredients-page'>
           <Header as="h2" textAlign="center" inverted>List of Ingredients</Header>
           <Card.Group>
             {this.props.ingredient.map((ingredient, index) => <IngredientCard key={index}
