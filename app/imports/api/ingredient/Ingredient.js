@@ -15,6 +15,9 @@ class IngredientsCollection {
       image: String,
       servings: { type: Number, defaultValue: 1 },
       unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ' '] },
+=======
+      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ''], optional: true },
+>>>>>>> Stashed changes
       calories: Number,
       fat: Number,
       carbs: Number,

@@ -17,7 +17,8 @@ class RecipeCollection {
       description: String,
       image: String,
       ingredients: { label: 'ingredients', type: Array },
-      'ingredients.$': { type: String },
+      'ingredients.$': { type: Array },
+      'ingredients.$.$': { type: String },
       /*  ingredients: {
         type: Array,
         minCount: 1,
