@@ -52,7 +52,7 @@ class AddRecipe extends React.Component {
                 <NumField id='form-servings' name='servings' decimal={false}/>
                 <TextField id='form-description' name='description'/>
                 <TextField id='form-image' name='image'/>
-                <TextField id='form-ingredient' name='ingredient'/>
+                <TextField id='form-ingredient' name='ingredient' label='Ingredients'/>
                 <TextField id='form-instructions' name='instructions'/>
                 <BoolField id='form-publicAccess' name='publicAccess'/>
                 <SubmitField id='form-add-recipe' value='Submit'/>
