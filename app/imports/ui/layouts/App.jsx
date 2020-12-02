@@ -14,7 +14,6 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
-import NutritionFacts from '../pages/NutritionFacts';
 import AddRecipe from '../pages/AddRecipe';
 import ListRecipe from '../pages/ListRecipe';
 import ListIngredients from '../pages/ListIngredients';
@@ -31,7 +30,6 @@ class App extends React.Component {
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
-              <Route path="/nutrition" component={NutritionFacts}/>
               <Route path="/all-recipes" component={AllRecipe}/>
               <Route path="/list-ingredients" component={ListIngredients}/>
               <ProtectedRoute path="/inventory" component={ListInventory}/>
