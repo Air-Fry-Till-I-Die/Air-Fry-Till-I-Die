@@ -112,8 +112,13 @@
     {
       "name": "Russet Potato",
       "image": "https://p0.pikrepo.com/preview/830/410/two-brown-potatoes-on-white-surface.jpg",
+<<<<<<< Updated upstream
       "servings": 1,
       "unit": "",
+=======
+      "servings": 0.4,
+      "unit": "lb",
+>>>>>>> Stashed changes
       "calories": 168,
       "fat": 0,
       "carbs": 37,
