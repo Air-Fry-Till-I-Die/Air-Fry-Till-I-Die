@@ -42,9 +42,9 @@ if (Inventory.collection.find().count() === 0) {
 }
 
 if (Ingredients.collection.find().count() === 0) {
-  if (Meteor.settings.defaultIngredient) {
+  if (Meteor.settings.defaultIngredients) {
     console.log('Creating default data for ingredient.');
-    Meteor.settings.defaultIngredient.map(data => addDataIngredient(data));
+    Meteor.settings.defaultIngredients.map(data => addDataIngredient(data));
   }
 }
 
