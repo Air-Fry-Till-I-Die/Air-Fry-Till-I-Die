@@ -17,7 +17,7 @@ class ListInventory extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
+        <Container id='my-inventory-page'>
           <Header as="h2" textAlign="center" inverted>My Inventory</Header>
           <Card.Group>
             {this.props.inventory.map((inventory, index) => <InventoryCard key={index}
