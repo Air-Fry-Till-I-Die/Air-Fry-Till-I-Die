@@ -42,3 +42,12 @@ test('Test that Add Recipes, My Recipes, and My Inventory page is displayed', as
   await navBar.gotoMyInventoryPage(testController);
   await myInventoryPage.isDisplayed(testController);
 });
+
+test('Test that Add Recipes Form works', async (testController) => {
+  await navBar.gotoSigninPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.isLoggedIn(testController, credentials.username);
+  await navBar.gotoAddRecipePage(testController);
+  await addRecipePage.addRecipe(testController, 'Pizza', '1', 'Delicious Pizza',
+      'https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg', 'Dough, Pizza Sauce, Mozzarella', 'Put the pizza in the air fryer', true);
+});

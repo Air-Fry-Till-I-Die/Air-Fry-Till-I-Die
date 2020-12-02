@@ -47,14 +47,14 @@ class AddRecipe extends React.Component {
             <Header as="h2" textAlign="center">Add Recipe</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name='name'/>
-                <NumField name='servings' decimal={false}/>
-                <TextField name='description'/>
-                <TextField name='image'/>
-                <TextField name='ingredients'/>
-                <TextField name='instructions'/>
-                <BoolField name='publicAccess'/>
-                <SubmitField value='Submit'/>
+                <TextField id='form-name' name='name'/>
+                <NumField id='form-servings' name='servings' decimal={false}/>
+                <TextField id='form-description' name='description'/>
+                <TextField id='form-image' name='image'/>
+                <TextField id='form-ingredient' name='ingredient'/>
+                <TextField id='form-instructions' name='instructions'/>
+                <BoolField id='form-publicAccess' name='publicAccess'/>
+                <SubmitField id='form-add-recipe' value='Submit'/>
                 <ErrorsField/>
               </Segment>
             </AutoForm>
