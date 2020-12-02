@@ -12,7 +12,7 @@ class IngredientsCollection {
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       name: String,
-      image: String,
+      image: { type: String, optional: true },
       servings: { type: Number, defaultValue: 1 },
       unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ''], optional: true },
       calories: Number,
