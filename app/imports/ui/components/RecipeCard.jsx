@@ -1,7 +1,17 @@
 import React from 'react';
 import { Card, Image, Modal, Button } from 'semantic-ui-react';
+import { _ } from 'meteor/underscore';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Recipes } from '../../api/recipe/Recipe';
+import { Ingredients } from '../../api/ingredient/Ingredient';
+
+function getUnit(name) {
+  const ing = _.pluck(Ingredients.collection.find({ name: name }).fetch(), 'unit');
+  const unit = ing.map(measure => Ingredients.collection.findOne({ unit: measure }).unit);
+  return unit;
+}
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class RecipeCard extends React.Component {
@@ -50,7 +60,7 @@ class RecipeCard extends React.Component {
                     <br/>
                     Ingredients:&nbsp;
                     <br/>
-                    {this.props.recipe.ingredients.map((ingr, index) => <div key={index}>{ingr[0]} - {ingr[1]}</div>)}
+                    {this.props.recipe.ingredients.map((ingr, index) => <div key={index}>{ingr[0]} - {ingr[1]} {getUnit(ingr[0])}</div>)}
                     <br/>
                     <br/>
                     Instructions:&nbsp;
@@ -68,7 +78,15 @@ class RecipeCard extends React.Component {
 /** Require a document to be passed to this component. */
 RecipeCard.propTypes = {
   recipe: PropTypes.object.isRequired,
+  ingredient: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */
-export default withRouter(RecipeCard);
+export default withTracker(() => {
+  // Ensure that minimongo is populated with all collections prior to running render().
+  const sub1 = Meteor.subscribe(Recipes.userPublicationName);
+  const sub2 = Meteor.subscribe(Ingredients.userPublicationName);
+  return {
+    ready: sub1.ready() && sub2.ready(),
+  };
+})(RecipeCard);
