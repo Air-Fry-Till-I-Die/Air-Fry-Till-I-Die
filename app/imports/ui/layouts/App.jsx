@@ -38,9 +38,7 @@ class App extends React.Component {
               <ProtectedRoute path="/add" component={AddRecipe}/>
               <ProtectedRoute path="/add-inventory" component={AddInventory}/>
               <ProtectedRoute path="/list" component={ListRecipe}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/edit-inventory/:_id" component={EditInventory}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
