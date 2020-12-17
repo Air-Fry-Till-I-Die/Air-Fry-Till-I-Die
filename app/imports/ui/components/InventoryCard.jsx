@@ -21,8 +21,8 @@ class InventoryCard extends React.Component {
         <Card.Content>
           <Image src={this.props.inventory.image}/>
           <Card.Header>{this.props.inventory.name}</Card.Header>
-          <Card.Description>Amount: {this.props.inventory.owned}<br/>
-          Servings: {this.props.inventory.servings * this.props.inventory.owned}</Card.Description>
+          <Card.Description>Amount Owned: {this.props.inventory.owned} {this.props.inventory.unit}<br/>
+          Servings: {this.props.inventory.servings * this.props.inventory.owned} {this.props.inventory.unit}</Card.Description>
         </Card.Content>
         <Modal
             trigger={<Button>Show Nutrition</Button>}
