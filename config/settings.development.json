@@ -103,10 +103,10 @@
     { "name": "Curried Roasted Cauliflower", "owner": "admin@foo.com", "servings": "4", "description": "Curry seasoned cauliflower", "image": "https://i2.wp.com/airfrywithme.com/wp-content/uploads/2019/10/Curry-Roasted-Cauliflower.jpeg?resize=768%2C576&ssl=1", "ingredients": [["cauliflower", 1], ["salt", 0.5], ["oil", 1], ["curry powder", 3], ["pepper", 0.5]], "instructions": "test",
       "publicAccess": true
     },
-    { "name": "Chicken Tikka", "owner": "admin@foo.com", "servings": "2", "description": "Indian style shicken", "image": "https://g6t8s5u9.rocketcdn.me/wp-content/uploads/2019/02/Air-Fryer-Chicken-Tikka-1.jpg", "ingredients": [["chicken breast", 0.5], ["red pepper", 2], ["oil", 1], ["white onion", 1], ["tikka seasoning", 3]], "instructions": "test",
+    { "name": "Chicken Tikka", "owner": "admin@foo.com", "servings": "2", "description": "Indian Style Chicken", "image": "https://g6t8s5u9.rocketcdn.me/wp-content/uploads/2019/02/Air-Fryer-Chicken-Tikka-1.jpg", "ingredients": [["chicken breast", 0.5], ["red pepper", 2], ["oil", 1], ["white onion", 1], ["tikka seasoning", 3]], "instructions": "test",
       "publicAccess": true
     },
-    { "name": "Onion Rings", "owner": "admin@foo.com", "servings": "1", "description": "Curry seasoned cauliflower", "image": "https://images.squarespace-cdn.com/content/v1/57bb2e8cb3db2b9076db6369/1535665478012-CT4JBZ4KDKFSEWHYCRHJ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg", "ingredients": [["white onion", 1], ["egg", 2], ["flour", 0.5], ["panko", 1], ["salt", 1], ["paprika", 1], ["pickle juice", 0.5], ["milk", 0.25]], "instructions": "test",
+    { "name": "Onion Rings", "owner": "admin@foo.com", "servings": "1", "description": "Light Crispy Onion Rings", "image": "https://images.squarespace-cdn.com/content/v1/57bb2e8cb3db2b9076db6369/1535665478012-CT4JBZ4KDKFSEWHYCRHJ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/image-asset.jpeg", "ingredients": [["white onion", 1], ["egg", 2], ["flour", 0.5], ["panko", 1], ["salt", 1], ["paprika", 1], ["pickle juice", 0.5], ["milk", 0.25]], "instructions": "test",
       "publicAccess": true
     }
   ],
@@ -814,6 +814,93 @@
       "sodium": 0,
       "vegetarian": true,
       "vegan": true
+    }
+  ],
+
+  "defaultVendors": [
+    { "owner": "kokua@foo.com", "link":"https://www.kokuamarket.com/", "name": "Kokua Market", "description": "Kokua Market is Honolulu's first and only natural food's Coop.",
+      "image": "https://images.squarespace-cdn.com/content/59c95e798fd4d2ce2dd4ac2a/1560126975079-9IKPMHLJNCTOAW6UZ24C/kokua+market+logo.png?format=1500w&content-type=image%2Fpng",
+      "address": "2643 S King St, Honolulu, HI 96826" },
+    { "owner": "nijiya@foo.com", "link":"https://www.nijiya.com/", "name": "Nijiya Market", "description": "Nijiya Market is a Japanese supermarket chain in America",
+      "image": "https://scontent.fhnl1-1.fna.fbcdn.net/v/t1.0-9/11703115_1625789174371944_565280359719158911_n.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=HLHkzgKztqYAX80RRcW&_nc_ht=scontent.fhnl1-1.fna&oh=0a2b7abb5024540d737018b0e6ad20e5&oe=5FFF9B1F",
+      "address": "1009 University Ave #101, Honolulu, HI 96826" },
+    { "owner": "safeway@foo.com", "link":"https://local.safeway.com/safeway/hi/honolulu/2855-e-manoa-rd.html", "name": "Safeway", "description": "Longtime supermarket chain carrying brand-name & house-label groceries, plus a deli, bakery & more.",
+      "image": "https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_zjeuv4f0/def_height/202/def_width/200/version/100012/type/1",
+      "address": "2855 E Manoa Rd, Honolulu, HI 96822" }
+  ],
+
+  "defaultProducts": [
+    { "owner": "kokua@foo.com", "name": "Bean Sprouts", "inStock": "Yes", "description": "8 oz bag of Bean Sprouts",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/beansprouts-1dcc5ed.jpg?webp=true&quality=90&resize=385%2C350",
+      "price": "$1.99"
+    },
+    { "owner": "kokua@foo.com", "name": "Potatoes", "inStock": "Yes", "description": "Organic Potatoes",
+      "image": "https://seubertfood.com/wp-content/uploads/2019/01/potato.jpg",
+      "price": "$1.50/lb"
+    },
+    { "owner": "kokua@foo.com", "name": "Apple Bananas", "inStock": "Yes", "description": "Organic Apple Bananas",
+      "image": "https://www.oahufresh.com/wp-content/uploads/2015/07/apple-banana.png",
+      "price": "$1.25/lb"
+    },
+    { "owner": "kokua@foo.com", "name": "Carrots", "inStock": "Yes", "description": "Organic Carrots",
+      "image": "https://s30386.pcdn.co/wp-content/uploads/2020/02/p19dngotfc1tor1cm79qh2is1h0q6.jpg",
+      "price": "$1.69/lb"
+    },
+    { "owner": "nijiya@foo.com", "name": "Chicken Thighs", "inStock": "Limited Quantities", "description": "Packaged Deboned Chicken Thighs",
+      "image": "https://thecookful.com/wp-content/uploads/2018/09/chicken-thighs-instant-pot-feature-1392x780-260x195.jpg",
+      "price": "$3.99/lb"
+    },
+    { "owner": "nijiya@foo.com", "name": "Nappa Cabbage", "inStock": "Yes", "description": "Product of the US",
+      "image": "https://images.albertsons-media.com/is/image/ABS/184310013",
+      "price": "$1.49/lb"
+    },
+    { "owner": "nijiya@foo.com", "name": "Enoki Mushroom", "inStock": "Yes", "description": "Product of Korea",
+      "image": "https://www.specialtyproduce.com/sppics/704.png",
+      "price": "$1.99/pk"
+    },
+    { "owner": "nijiya@foo.com", "name": "Chicken Karaage", "inStock": "Yes", "description": "12.3 Oz Package of Chicken Karaage",
+      "image": "https://i5.walmartimages.com/asr/5149838d-7913-4894-9823-f86e7a69b8c6_1.7b38f1bbca89954ec3a66d4044db4cc6.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+      "price": "$6.49/pk"
+    },
+    { "owner": "nijiya@foo.com", "name": "Edaname", "inStock": "Yes", "description": "400g Bag of Edaname",
+      "image": "https://dunyongfoodservices.com/media/catalog/product/cache/3fba745dcec88e97bfe808bedc471260/7/8/7852-front-def.jpg",
+      "price": "$1.99/pk"
+    },
+    { "owner": "safeway@foo.com", "name": "Potatoes", "inStock": "Yes", "description": "Potatoes",
+      "image": "https://seubertfood.com/wp-content/uploads/2019/01/potato.jpg",
+      "price": "$1.19/lb"
+    },
+    { "owner": "safeway@foo.com", "name": "Bananas", "inStock": "Yes", "description": "Bananas",
+      "image": "https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-970-80.jpg",
+      "price": "$0.99/lb"
+    },
+    { "owner": "safeway@foo.com", "name": "Carrots", "inStock": "Yes", "description": "Carrots",
+      "image": "https://s30386.pcdn.co/wp-content/uploads/2020/02/p19dngotfc1tor1cm79qh2is1h0q6.jpg",
+      "price": "$1.69/lb"
+    },
+    { "owner": "safeway@foo.com", "name": "Shredded Cheddar Cheese", "inStock": "No", "description": "8 Oz Bag of Lucerne Cheddar Cheese",
+      "image": "https://images.albertsons-media.com/is/image/ABS/137050432",
+      "price": "$3.00"
+    },
+    { "owner": "safeway@foo.com", "name": "Green Onions", "inStock": "Yes", "description": "A bunch of Green Onions",
+      "image": "https://images.albertsons-media.com/is/image/ABS/184460011",
+      "price": "$0.99/bunch"
+    },
+    { "owner": "safeway@foo.com", "name": "Curry Powder", "inStock": "Yes", "description": "O Organics Curry Powder, 1.8 Oz",
+      "image": "https://images.albertsons-media.com/is/image/ABS/960037905",
+      "price": "$3.97"
+    },
+    { "owner": "safeway@foo.com", "name": "Ketchup", "inStock": "Yes", "description": "Heinz Tomato Ketchup, 14 Oz",
+      "image": "https://images.albertsons-media.com/is/image/ABS/105010075",
+      "price": "$2.99"
+    },
+    { "owner": "safeway@foo.com", "name": "Bacon Bits", "inStock": "Yes", "description": "Oscar Mayer Bacon Bits Real, 4.5 Oz",
+      "image": "https://images.albertsons-media.com/is/image/ABS/960063435",
+      "price": "$3.99"
+    },
+    { "owner": "safeway@foo.com", "name": "Sour Cream", "inStock": "Yes", "description": "Lucerne Sour Cream, 16 Oz",
+      "image": "https://images.albertsons-media.com/is/image/ABS/136200030",
+      "price": "$1.79"
     }
   ],
 

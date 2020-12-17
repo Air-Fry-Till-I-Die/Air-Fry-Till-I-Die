@@ -17,7 +17,7 @@ class NavBar extends React.Component {
           <Menu.Item id="navbar-all-recipe" key='all' style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/all-recipes">
             <Header inverted as='h2'>All Recipes</Header>
           </Menu.Item>
-          <Menu.Item style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/">
+          <Menu.Item style={{ marginLeft: '20px' }} as={NavLink} activeClassName="" exact to="/vendors">
             <Header inverted as='h2'>Vendors</Header>
           </Menu.Item>
           {this.props.currentUser ? (
