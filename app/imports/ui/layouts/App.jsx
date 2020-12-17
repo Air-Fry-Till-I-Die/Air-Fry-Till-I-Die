@@ -12,8 +12,6 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
-import AddRecipe from '../pages/AddRecipe';
-import ListRecipe from '../pages/ListRecipe';
 import ListIngredients from '../pages/ListIngredients';
 import AllRecipe from '../pages/AllRecipe';
 import ListVendors from '../pages/ListVendors';
@@ -35,9 +33,7 @@ class App extends React.Component {
               <Route path="/list-ingredients" component={ListIngredients}/>
               <Route path="/vendors" component={ListVendors}/>
               <ProtectedRoute path="/inventory" component={ListInventory}/>
-              <ProtectedRoute path="/add" component={AddRecipe}/>
               <ProtectedRoute path="/add-inventory" component={AddInventory}/>
-              <ProtectedRoute path="/list" component={ListRecipe}/>
               <ProtectedRoute path="/edit-inventory/:_id" component={EditInventory}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
