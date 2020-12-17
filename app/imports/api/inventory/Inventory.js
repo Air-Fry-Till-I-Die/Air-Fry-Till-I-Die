@@ -12,15 +12,23 @@ class InventoryCollection {
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       name: String,
-      ingredients: { label: 'ingredients', type: Array },
-      'ingredients.$': { type: Array },
-      'ingredients.$.$': { type: String },
+      owned: Number,
+      owner: String,
+      image: { type: String, optional: true },
+      servings: { type: Number, defaultValue: 1 },
+      unit: { type: String, allowedValues: ['Tsp', 'Tbsp', 'Cup', 'Oz', 'lb', ''], optional: true },
+      calories: Number,
+      fat: Number,
+      carbs: Number,
+      protein: Number,
+      sodium: Number,
+      vegetarian: { type: Boolean, defaultValue: false },
+      vegan: { type: Boolean, defaultValue: false },
     }, { tracker: Tracker });
-
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);
-
     // Define names for publications and subscriptions
+    this.publicPublicationName = `${this.name}.publications.public`;
     this.userPublicationName = `${this.name}.publication.user`;
     this.adminPublicationName = `${this.name}.publication.admin`;
   }
