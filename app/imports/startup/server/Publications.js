@@ -31,6 +31,14 @@ Meteor.publish(Recipes.userPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(Ingredients.userPublicationName, function () {
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Ingredients.collection.find({ owner: username } || { publicAccess: true });
+  }
+  return this.ready();
+});
+
 Meteor.publish(Recipes.allPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
