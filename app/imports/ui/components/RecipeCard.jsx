@@ -63,7 +63,7 @@ class RecipeCard extends React.Component {
                     <br/>
                     <br/>
                     Instructions:&nbsp;
-                    {this.props.recipe.instructions}
+                    {this.props.recipe.instructions.map((inst, index) => <div key={index}>{inst}</div>)}
                   </p>
                 </div>
               }

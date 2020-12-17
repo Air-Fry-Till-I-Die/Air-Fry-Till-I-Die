@@ -24,7 +24,8 @@ class RecipeCollection {
         minCount: 1,
         maxCount: 15,
       },  */
-      instructions: String,
+      instructions: { label: 'ingredients', type: Array },
+      'instructions.$': { type: String },
       /*  instructions: {
         type: Array,
         minCount: 1,
