@@ -19,7 +19,9 @@ class InventoryCard extends React.Component {
     return (
       <Card centered>
         <Card.Content>
-          <Image src={this.props.inventory.image}/>
+          <div style={{ color: 'black', fontSize: 15, paddingLeft: 15, paddingRight: 15, paddingBottom: 15 }}>
+          <Image src={this.props.inventory.image} />
+          </div>
           <Card.Header>{this.props.inventory.name}</Card.Header>
           <Card.Description>Amount Owned: {this.props.inventory.owned} {this.props.inventory.unit}<br/>
           Servings: {this.props.inventory.servings * this.props.inventory.owned} {this.props.inventory.unit}</Card.Description>
