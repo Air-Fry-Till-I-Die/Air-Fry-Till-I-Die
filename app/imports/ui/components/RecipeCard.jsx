@@ -18,7 +18,6 @@ class RecipeCard extends React.Component {
               <hr/>
             </Card.Meta>
             <Card.Description>
-              Description:&nbsp;
               {this.props.recipe.description}
               <br/>
             </Card.Description>
